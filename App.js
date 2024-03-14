@@ -28,10 +28,9 @@ export default function App() {
       );
 
       setNews(data.data.articles);
+      setLoading(false);
     } catch (error) {
       console.log(error);
-    } finally {
-      setLoading(false);
     }
   };
 
